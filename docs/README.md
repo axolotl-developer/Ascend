@@ -1,617 +1,271 @@
-# Size Limit [![Cult Of Martians][cult-img]][cult]
-
-<img src="https://ai.github.io/size-limit/logo.svg" align="right"
-     alt="Size Limit logo by Anton Lovchikov" width="120" height="178">
-
-Size Limit is a performance budget tool for JavaScript. It checks every commit
-on CI, calculates the real cost of your JS for end-users and throws an error
-if the cost exceeds the limit.
-
-* **ES modules** and **tree-shaking** support.
-* Add Size Limit to **GitHub Actions**, **Circle CI** or another CI system
-  to know if a pull request adds a massive dependency.
-* **Modular** to fit different use cases: big JS applications
-  that use their own bundler or small npm libraries with many files.
-* Can calculate **the time** it would take a browser
-  to download and **execute** your JS. Time is a much more accurate
-  and understandable metric compared to the size in bytes.
-* Calculations include **all dependencies and polyfills**
-  used in your JS.
+<h1 align="center">
+    <a href="https://amplication.com/#gh-light-mode-only">
+    <img src="./.github/assets/amplication-logo-light-mode.svg">
+    </a>
+    <a href="https://amplication.com/#gh-dark-mode-only">
+    <img src="./.github/assets/amplication-logo-dark-mode.svg">
+    </a>
+</h1>
 
 <p align="center">
-  <img src="./img/example.png" alt="Size Limit CLI" width="738">
+  <i align="center">Instantly generate production-ready Node.js backend apps 🚀</i>
 </p>
 
-With **[GitHub action]** Size Limit will post bundle size changes as a comment
-in pull request discussion.
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/andresz1/size-limit-action/master/assets/pr.png"
-  alt="Size Limit comment in pull request about bundle size changes"
-  width="686" height="289">
-</p>
-
-With `--why`, Size Limit can tell you *why* your library is of this size
-and show the real cost of all your internal dependencies.
-We are using [Statoscope] for this analysis.
-
-<p align="center">
-  <img src="./img/why.png" alt="Statoscope example" width="650">
-</p>
-
-<p align="center">
-  <a href="https://evilmartians.com/?utm_source=size-limit">
-    <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
-         alt="Sponsored by Evil Martians" width="236" height="54">
+<h4 align="center">
+  <a href="https://github.com/amplication/amplication/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/amplication/amplication/ci.yml?branch=master&label=pipeline&style=flat-square" alt="continuous integration" style="height: 20px;">
   </a>
+  <a href="https://github.com/amplication/amplication/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors-anon/amplication/amplication?color=yellow&style=flat-square" alt="contributors" style="height: 20px;">
+  </a>
+  <a href="https://opensource.org/licenses/Apache-2.0">
+    <img src="https://img.shields.io/badge/apache%202.0-blue.svg?style=flat-square&label=license" alt="license" style="height: 20px;">
+  </a>
+  <br>
+  <a href="https://amplication.com/discord">
+    <img src="https://img.shields.io/badge/discord-7289da.svg?style=flat-square&logo=discord" alt="discord" style="height: 20px;">
+  </a>
+  <a href="https://twitter.com/amplication">
+    <img src="https://img.shields.io/twitter/follow/amplication?style=social" alt="twitter" style="height: 20px;">
+  </a>
+  <a href="https://www.youtube.com/c/Amplicationcom">
+    <img src="https://img.shields.io/badge/youtube-d95652.svg?style=flat-square&logo=youtube" alt="youtube" style="height: 20px;">
+  </a>
+</h4>
+
+
+
+<p align="center">
+    <img src="https://github.com/amplication/amplication/assets/73097785/c7ed2bbc-8954-46a1-a520-91a4711a9320.png" alt="dashboard"/>
 </p>
 
-[GitHub action]: https://github.com/andresz1/size-limit-action
-[Statoscope]:    https://github.com/statoscope/statoscope
-[cult-img]:      http://cultofmartians.com/assets/badges/badge.svg
-[cult]:          http://cultofmartians.com/tasks/size-limit-config.html
+## Introduction
 
-## Who Uses Size Limit
+`Amplication` is a robust, open-source development platform designed to revolutionize the creation of scalable and secure Node.js applications. We eliminate repetitive coding tasks and deliver production-ready infrastructure code, meticulously tailored to your specifications and adhering to industry best practices.
 
-* [MobX](https://github.com/mobxjs/mobx)
-* [Material-UI](https://github.com/callemall/material-ui)
-* [Autoprefixer](https://github.com/postcss/autoprefixer)
-* [PostCSS](https://github.com/postcss/postcss) reduced
-  [25% of the size](https://github.com/postcss/postcss/commit/150edaa42f6d7ede73d8c72be9909f0a0f87a70f).
-* [Browserslist](https://github.com/browserslist/browserslist) reduced
-  [25% of the size](https://github.com/browserslist/browserslist/commit/640b62fa83a20897cae75298a9f2715642531623).
-* [EmojiMart](https://github.com/missive/emoji-mart) reduced
-  [20% of the size](https://github.com/missive/emoji-mart/pull/111)
-* [nanoid](https://github.com/ai/nanoid) reduced
-  [33% of the size](https://github.com/ai/nanoid/commit/036612e7d6cc5760313a8850a2751a5e95184eab).
-* [React Focus Lock](https://github.com/theKashey/react-focus-lock) reduced
-  [32% of the size](https://github.com/theKashey/react-focus-lock/pull/48).
-* [Logux](https://github.com/logux) reduced
-  [90% of the size](https://github.com/logux/logux-client/commit/62b258e20e1818b23ae39b9c4cd49e2495781e91).
+Our user-friendly interface fosters seamless integration of APIs, data models, databases, authentication, and authorization. Built on a flexible, plugin-based architecture, Amplication allows effortless customization of the code and offers a diverse range of integrations.
 
+With a strong focus on collaboration, Amplication streamlines team-oriented development, making it an ideal choice for groups of all sizes, from startups to large enterprises. Our platform enables you to concentrate on your business logic, while we handle the heavy lifting.
 
-## How It Works
+Experience the fastest way to develop Node.js applications with Amplication.
 
-1. Size Limit contains a CLI tool, 3 plugins (`file`, `webpack`, `time`)
-   and 3 plugin presets for popular use cases (`app`, `big-lib`, `small-lib`).
-   A CLI tool finds plugins in `package.json` and loads the config.
-2. If you use the `webpack` plugin, Size Limit will bundle your JS files into
-   a single file. It is important to track dependencies and webpack polyfills.
-   It is also useful for small libraries with many small files and without
-   a bundler.
-3. The `webpack` plugin creates an empty webpack project, adds your library
-   and looks for the bundle size difference.
-4. The `time` plugin compares the current machine performance with that of
-   a low-priced Android devices to calculate the CPU throttling rate.
-5. Then the `time` plugin runs headless Chrome (or desktop Chrome if it’s
-   available) to track the time a browser takes to compile and execute your JS.
-   Note that these measurements depend on available resources and might
-   be unstable. [See here](https://github.com/mbalabash/estimo/issues/5)
-   for more details.
+<details open>
+<summary>
+ Features
+</summary> <br />
 
+<p align="center">
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
+&nbsp;
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+</p>
 
-## Usage
-
-### JS Applications
-
-Suitable for applications that have their own bundler and send the JS bundle
-directly to a client (without publishing it to npm). Think of a user-facing app
-or website, like an email client, a CRM, a landing page or a blog with
-interactive elements, using React/Vue/Svelte lib or vanilla JS.
-
-<details><summary><b>Show instructions</b></summary>
-
-1. Install the preset:
-
-    ```sh
-    npm install --save-dev size-limit @size-limit/file
-    ```
-
-2. Add the `size-limit` section and the `size` script to your `package.json`:
-
-    ```diff
-    + "size-limit": [
-    +   {
-    +     "path": "dist/app-*.js"
-    +   }
-    + ],
-      "scripts": {
-        "build": "webpack ./webpack.config.js",
-    +   "size": "npm run build && size-limit",
-        "test": "vitest && eslint ."
-      }
-    ```
-
-3. Here’s how you can get the size for your current project:
-
-    ```sh
-    $ npm run size
-
-      Package size: 30.08 kB with all dependencies, minified and brotlied
-    ```
-
-4. Now, let’s set the limit. Add 25% to the current total size and use that as
-   the limit in your `package.json`:
-
-    ```diff
-      "size-limit": [
-        {
-    +     "limit": "35 kB",
-          "path": "dist/app-*.js"
-        }
-      ],
-    ```
-
-5. Add the `size` script to your test suite:
-
-    ```diff
-      "scripts": {
-        "build": "webpack ./webpack.config.js",
-        "size": "npm run build && size-limit",
-    -   "test": "vitest && eslint ."
-    +   "test": "vitest && eslint . && npm run size"
-      }
-    ```
-
-6. If you don’t have a continuous integration service running, don’t forget
-   to add one — start with Github Actions.
-
+<p align="center">
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/62c8d533-8475-4290-abc8-c433c095e68a.png" alt="plugins"/>
+&nbsp;
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9c67a354-a06f-47d1-a118-ab89b775bf91.png" alt="microservices"/>
+</p> 
+    
+<p align="center">
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/a51e166b-07ec-4c80-99ed-8792a81c4064.png" alt="own-your-code"/>
+&nbsp;
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/1cca9721-b8d6-425b-a1a9-d10d3cdcc9b8.png" alt="customize-code"/>
+</p>
+    
 </details>
 
+## Usage 
 
-### JS Application and Time-based Limit
+To get started with Amplication, the hosted version of the product can be used. You can get started immediately at [app.amplication.com](https://app.amplication.com). After the login page, you will be guided through creating your first service. The [website](https://amplication.com) provides an overview of the application, additional information on the product and guides can be found in the [docs](https://docs.amplication.com).
 
-File size limit (in kB) is not the best way to describe your JS application
-cost for developers. Developers will compare the size of the JS bundle
-with the size of images. But browsers need much more time to parse 100 kB
-of JS than 100 kB of an image since JS compilers are very complex.
+<details>
+<summary>
+  Tutorials
+</summary> <br />
 
-This is why Size Limit support time-based limit. It runs headless Chrome
-to track the time a browser takes to compile and execute your JS.
-
-<details><summary><b>Show instructions</b></summary>
-
-1. Install the preset:
-
-    ```sh
-    npm install --save-dev size-limit @size-limit/preset-app
-    ```
-
-2. Add the `size-limit` section and the `size` script to your `package.json`:
-
-    ```diff
-    + "size-limit": [
-    +   {
-    +     "path": "dist/app-*.js"
-    +   }
-    + ],
-      "scripts": {
-        "build": "webpack ./webpack.config.js",
-    +   "size": "npm run build && size-limit",
-        "test": "vitest && eslint ."
-      }
-    ```
-
-3. Here’s how you can get the size for your current project:
-
-    ```sh
-    $ npm run size
-
-      Package size: 30.08 kB with all dependencies, minified and brotlied
-      Loading time: 602 ms   on slow 3G
-      Running time: 214 ms   on Snapdragon 410
-      Total time:   815 ms
-    ```
-
-4. Now, let’s set the limit. Add 25% to the current total time and use that as
-   the limit in your `package.json`:
-
-    ```diff
-      "size-limit": [
-        {
-    +     "limit": "1 s",
-          "path": "dist/app-*.js"
-        }
-      ],
-    ```
-
-5. Add the `size` script to your test suite:
-
-    ```diff
-      "scripts": {
-        "build": "webpack ./webpack.config.js",
-        "size": "npm run build && size-limit",
-    -   "test": "vitest && eslint ."
-    +   "test": "vitest && eslint . && npm run size"
-      }
-    ```
-
-6. If you don’t have a continuous integration service running, don’t forget
-   to add one — start with Github Actions.
-
+- [To-do application using Amplication and Angular](https://docs.amplication.com/tutorials/angular-todos)
+- [To-do application using Amplication and React](https://docs.amplication.com/tutorials/react-todos)
 </details>
 
+## Development
 
-### Big Libraries
+Alternatively, instead of using the hosted version of the product, Amplication can be run locally for code generation purposes or contributions - if so, please refer to our [contributing](#contributing_anchor) section.
 
-JS libraries > 10 kB in size.
+<details open>
+<summary>
+Pre-requisites
+</summary> <br />
+To be able to start development on Amplication, make sure that you have the following prerequisites installed:
 
-This preset includes headless Chrome, and will measure your lib’s execution
-time. You likely don’t need this overhead for a small 2 kB lib, but for larger
-ones the execution time is a more accurate and understandable metric that
-the size in bytes. Libraries like [React] are good examples for this preset.
+###
 
-<details><summary><b>Show instructions</b></summary>
-
-1. Install preset:
-
-    ```sh
-    npm install --save-dev size-limit @size-limit/preset-big-lib
-    ```
-
-2. Add the `size-limit` section and the `size` script to your `package.json`:
-
-    ```diff
-    + "size-limit": [
-    +   {
-    +     "path": "dist/react.production-*.js"
-    +   }
-    + ],
-      "scripts": {
-        "build": "webpack ./scripts/rollup/build.js",
-    +   "size": "npm run build && size-limit",
-        "test": "vitest && eslint ."
-      }
-    ```
-
-3. If you use ES modules you can test the size after tree-shaking with `import`
-   option:
-
-    ```diff
-      "size-limit": [
-        {
-          "path": "dist/react.production-*.js",
-    +     "import": "{ createComponent }"
-        }
-      ],
-    ```
-
-4. Here’s how you can get the size for your current project:
-
-    ```sh
-    $ npm run size
-
-      Package size: 30.08 kB with all dependencies, minified and brotlied
-      Loading time: 602 ms   on slow 3G
-      Running time: 214 ms   on Snapdragon 410
-      Total time:   815 ms
-    ```
-
-5. Now, let’s set the limit. Add 25% to the current total time and use that
-   as the limit in your `package.json`:
-
-    ```diff
-      "size-limit": [
-        {
-    +     "limit": "1 s",
-          "path": "dist/react.production-*.js"
-        }
-      ],
-    ```
-
-6. Add a `size` script to your test suite:
-
-    ```diff
-      "scripts": {
-        "build": "rollup ./scripts/rollup/build.js",
-        "size": "npm run build && size-limit",
-    -   "test": "vitest && eslint ."
-    +   "test": "vitest && eslint . && npm run size"
-      }
-    ```
-
-7. If you don’t have a continuous integration service running, don’t forget
-   to add one — start with Github Actions.
-8. Add the library size to docs, it will help users to choose your project:
-
-    ```diff
-      # Project Name
-
-      Short project description
-
-      * **Fast.** 10% faster than competitor.
-    + * **Small.** 15 kB (minified and brotlied).
-    +   [Size Limit](https://github.com/ai/size-limit) controls the size.
-    ```
-
+- Node.js
+- Docker
+- Git
 </details>
 
+<details open>
+<summary>
+Running Amplication
+</summary> <br />
 
-### Small Libraries
+> **Note**
+> It is also possible to start development with GitHub Codespaces, when navigating to `< > Code`, select `Codespaces` instead of `Local`. Click on either the `+`-sign or the `Create codespace on master`-button.
 
-JS libraries < 10 kB in size.
+Amplication is using a monorepo architecture - powered by <a href="https://nx.dev">Nx Workspaces</a> - where multiple applications and libraries exist in a single repository. To setup a local development environment the following steps can be followed:
 
-This preset will only measure the size, without the execution time, so it’s
-suitable for small libraries. If your library is larger, you likely want
-the Big Libraries preset above. [Nano ID] or [Storeon] are good examples
-for this preset.
-
-<details><summary><b>Show instructions</b></summary>
-
-1. First, install `size-limit`:
-
-    ```sh
-    npm install --save-dev size-limit @size-limit/preset-small-lib
-    ```
-
-2. Add the `size-limit` section and the `size` script to your `package.json`:
-
-    ```diff
-    + "size-limit": [
-    +   {
-    +     "path": "index.js"
-    +   }
-    + ],
-      "scripts": {
-    +   "size": "size-limit",
-        "test": "vitest && eslint ."
-      }
-    ```
-
-3. Here’s how you can get the size for your current project:
-
-    ```sh
-    $ npm run size
-
-      Package size: 177 B with all dependencies, minified and brotlied
-    ```
-
-4. If your project size starts to look bloated, run `--why` for analysis:
-
-    ```sh
-    npm run size -- --why
-    ```
-
-    > We use [Statoscope](https://github.com/statoscope/statoscope) as bundle analyzer.
-
-5. Now, let’s set the limit. Determine the current size of your library,
-   add just a little bit (a kilobyte, maybe) and use that as the limit
-   in your `package.json`:
-
-    ```diff
-     "size-limit": [
-        {
-    +     "limit": "9 kB",
-          "path": "index.js"
-        }
-     ],
-    ```
-
-6. Add the `size` script to your test suite:
-
-    ```diff
-      "scripts": {
-        "size": "size-limit",
-    -   "test": "vitest && eslint ."
-    +   "test": "vitest && eslint . && npm run size"
-      }
-    ```
-
-7. If you don’t have a continuous integration service running, don’t forget
-   to add one — start with Github Actions.
-8. Add the library size to docs, it will help users to choose your project:
-
-    ```diff
-      # Project Name
-
-      Short project description
-
-      * **Fast.** 10% faster than competitor.
-    + * **Small.** 500 bytes (minified and brotlied). No dependencies.
-    +   [Size Limit](https://github.com/ai/size-limit) controls the size.
-    ```
-
-</details>
-
-[Storeon]: https://github.com/ai/storeon/
-[Nano ID]: https://github.com/ai/nanoid/
-[React]: https://github.com/facebook/react/
+**BEFORE** you run the following steps make sure:
+1. You have typescript installed locally on you machine ```npm install -g typescript```
+2. You are using a supported node version (check `engines` `node` in the [package.json](./package.json))
+3. You are using a supported npm version (check `engines` `npm` in the [package.json](./package.json))
+4. You have `docker` installed and running on your machine
 
 
-## Reports
-
-Size Limit has a [GitHub action] that comments and rejects pull requests based
-on Size Limit output.
-
-1. Install and configure Size Limit as shown above.
-2. Add the following action inside `.github/workflows/size-limit.yml`
-
-```yaml
-name: "size"
-on:
-  pull_request:
-    branches:
-      - master
-jobs:
-  size:
-    runs-on: ubuntu-latest
-    env:
-      CI_JOB_NUMBER: 1
-    steps:
-      - uses: actions/checkout@v1
-      - uses: andresz1/size-limit-action@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+1. Clone the repository and install dependencies:
+```shell
+git clone https://github.com/amplication/amplication.git && cd amplication && npm install
 ```
 
-
-## Config
-
-### Plugins and Presets
-
-Plugins or plugin presets will be loaded automatically from `package.json`.
-For example, if you want to use `@size-limit/webpack`, you can just use
-`npm install --save-dev @size-limit/webpack`, or you can use our preset
-`@size-limit/preset-big-lib`.
-
-Plugins:
-
-* `@size-limit/file` checks the size of files with Brotli (default), Gzip
-  or without compression.
-* `@size-limit/webpack` adds your library to empty webpack project
-  and prepares bundle file for `file` plugin.
-* `@size-limit/webpack-why` adds reports for `webpack` plugin
-  about your library is of this size to show the cost of all your
-  dependencies.
-* `@size-limit/webpack-css` adds css support for `webpack` plugin.
-* `@size-limit/esbuild` is like `webpack` plugin, but uses `esbuild`
-  to be faster and use less space in `node_modules`.
-* `@size-limit/esbuild-why` add reports for `esbuild` plugin
-  about your library is of this size to show the cost of all your
-  dependencies.
-* `@size-limit/time` uses headless Chrome to track time to execute JS.
-
-Plugin presets:
-
-* `@size-limit/preset-app` contains `file` and `time` plugins.
-* `@size-limit/preset-big-lib` contains `webpack`, `file`, and `time` plugins.
-* `@size-limit/preset-small-lib` contains `esbuild` and `file` plugins.
-
-
-#### Third-Party Plugins
-
-Third-party plugins and presets named starting with `size-limit-` are also supported.
-For example:
-
-* [`size-limit-node-esbuild`](https://github.com/un-ts/size-limit/tree/main/packages/node-esbuild)
-  is like `@size-limit/esbuild` but for Node libraries.
-* [`size-limit-preset-node-lib`](https://github.com/un-ts/size-limit/tree/main/packages/preset-node-lib)
-  is like `@size-limit/preset-small-lib` but for Node libraries which contains
-  above `node-esbuild` and core `file` plugins.
-* [`nx-size-limit`](https://github.com/LironHazan/nx-size-limit)
-  is an [NX](https://nx.dev/community) build system community plugin.
-
-
-### Limits Config
-
-Size Limits supports three ways to define limits config.
-
-1. `size-limit` section in `package.json`:
-
-   ```json
-     "size-limit": [
-       {
-         "path": "index.js",
-         "import": "{ createStore }",
-         "limit": "500 ms"
-       }
-     ]
-   ```
-
-2. or a separate `.size-limit.json` config file:
-
-   ```js
-   [
-     {
-       "path": "index.js",
-       "import": "{ createStore }",
-       "limit": "500 ms"
-     }
-   ]
-   ```
-
-3. or a more flexible `.size-limit.js` or `.size-limit.cjs` config file:
-
-   ```js
-   module.exports = [
-     {
-       path: "index.js",
-       import: "{ createStore }",
-       limit: "500 ms"
-     }
-   ]
-   ```
-
-Each section in the config can have these options:
-
-* **path**: relative paths to files. The only mandatory option.
-  It could be a path `"index.js"`, a [pattern] `"dist/app-*.js"`
-  or an array `["index.js", "dist/app-*.js", "!dist/app-exclude.js"]`.
-* **import**: partial import to test tree-shaking. It could be `"{ lib }"`
-  to test `import { lib } from 'lib'`, `*` to test all exports,
-  or `{ "a.js": "{ a }", "b.js": "{ b }" }` to test multiple files.
-* **limit**: size or time limit for files from the `path` option. It should be
-  a string with a number and unit, separated by a space.
-  Format: `100 B`, `10 kB`, `500 ms`, `1 s`.
-* **name**: the name of the current section. It will only be useful
-  if you have multiple sections.
-* **entry**: when using a custom webpack config, a webpack entry could be given.
-  It could be a string or an array of strings.
-  By default, the total size of all entry points will be checked.
-* **webpack**: with `false` it will disable webpack.
-* **running**: with `false` it will disable calculating running time.
-* **gzip**: with `true` it will use Gzip compression and disable
-  Brotli compression.
-* **brotli**: with `false` it will disable any compression.
-* **config**: a path to a custom webpack config.
-* **ignore**: an array of files and dependencies to exclude from
-  the project size calculation.
-* **modifyWebpackConfig**: (.size-limit.js only) function that can be used
-  to do last-minute changes to the webpack config, like adding a plugin.
-* **compareWith**: path to `stats.json` from another build to compare
-  (when `--why` is using).
-* **uiReports**: custom UI reports list (see [Statoscope docs]).
-
-If you use Size Limit to track the size of CSS files, make sure to set
-`webpack: false`. Otherwise, you will get wrong numbers, because webpack
-inserts `style-loader` runtime (≈2 kB) into the bundle.
-
-[Statoscope docs]: https://github.com/statoscope/statoscope/tree/master/packages/webpack-plugin#optionsreports-report
-[pattern]: https://github.com/sindresorhus/globby#globbing-patterns
-
-## Analyze with `--why`
-
-You can run `size-limit --why` to analyze the bundle.
-
-You will need to install `@size-limit/esbuild-why` or `@size-limit/webpack-why`
-depends on which bundler you are using (default is `esbuild`).
-
-For `@size-limit/esbuild-why`,
-it will generate a `esbuild-why.html` at the current directory & open it in the browser.
-
-If you also specify `--save-bundle <DIR>`,
-the report will be generated inside `<DIR>`.
-
-If you have multiple sections in your config,
-the files will be named `esbuild-why-{n}.html`,
-or you can give it a custom name:
-
-```jsonc
-[
-  {
-    "name": "cjs",
-    /* snap */
-  },
-  {
-    "name": "esm",
-    /* snap */
-  }
-]
+2. Run the setup script, which takes care of installing dependencies, building packages, and setting up the workspace:
+```shell
+npm run setup:dev
 ```
 
-This will produce `esbuild-why-cjs.html` and `esbuild-why-esm.html` respectively.
+3. Option 1: Running the required infrastructure - view infrastructure component logs
 
-For `@size-limit/webpack-why`,
-it will generate the report and open it in the browser automatically.
 
-## JS API
-
-```js
-const sizeLimit = require('size-limit')
-const filePlugin = require('@size-limit/file')
-const webpackPlugin = require('@size-limit/webpack')
-
-sizeLimit([filePlugin, webpackPlugin], [filePath]).then(result => {
-  result //=> { size: 12480 }
-})
+```shell
+npm run docker:dev
 ```
+3. Option 2: Running the required infrastructure - run the infrastructure components in background
+```shell
+npm run docker:dev -- -d
+```
+
+4. Apply database migrations
+```shell
+npm run db:migrate:deploy
+```
+
+5. To start developing, run one or more of the applications available under `serve:[application]` scripts of the package.json.
+
+```shell
+# running the server component
+npm run serve:server
+
+# running the client component
+npm run serve:client
+
+# running the data-service-generator component
+npm run serve:dsg
+
+# running the git-pull-request-service component
+npm run serve:git
+
+# running the plugin-api component
+npm run serve:plugins
+```
+
+> **Note**
+> In order to run the Amplication client properly, both the client and server need to be started by the `npm run serve:[application]` command, as well as an additional component for development on a specific component.
+
+The development environment should now be set up. Additional information on the different application components can be found under packages/`[application]`/README.md file. Happy hacking! 👾
+</details>
+
+## Resources
+
+- **[Website](https://amplication.com)** overview of the product.
+- **[Docs](https://docs.amplication.com)** for comprehensive documentation.
+- **[Blog](https://amplication.com/blog)** for guides and technical comparisons.
+- **[Roadmap](https://amplication.com/#roadmap)** to see what features will be added in the future.
+- **[Discord](https://amplication.com/discord)** for support and discussions with the community and the team.
+- **[GitHub](https://github.com/amplication/amplication)** for source code, project board, issues, and pull requests.
+- **[Twitter](https://twitter.com/amplication)** for the latest updates on the product and published blogs.
+- **[YouTube](https://www.youtube.com/c/Amplicationcom)** for guides and technical talks.
+
+<a name="contributing_anchor"></a>
+## Contributing
+
+Amplication is an open-source project. We are committed to a fully transparent development process and highly appreciate any contributions. Whether you are helping us fix bugs, proposing new features, improving our documentation or spreading the word - we would love to have you as a part of the Amplication community. Please refer to our [contribution guidelines](./CONTRIBUTING.md) and [code of conduct](./CODE_OF_CONDUCT.md).
+
+- Bug Report: If you see an error message or encounter an issue while using Amplication, please create a [bug report](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A+bug&template=bug.yaml&title=%F0%9F%90%9B+Bug+Report%3A+).
+
+- Feature Request: If you have an idea or if there is a capability that is missing and would make development easier and more robust, please submit a[feature request](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A+feature+request&template=feature.yml).
+
+- Documentation Request: If you're reading the Amplication docs and feel like you're missing something, please submit a [documentation request](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A+docs&template=documentation-request.yaml&title=%F0%9F%93%96+Documentation%3A+).
+
+Not sure where to start? Join our discord and we will help you get started!
+
+<a href="https://amplication.com/discord"><img src="https://amplication.com/images/discord_banner_purple.svg" /></a>
+
+## Contributors
+
+<!---
+npx contributor-faces --exclude "*bot*" --limit 70 --repo "https://github.com/amplication/amplication"
+
+change the height and width for each of the contributors from 80 to 50.
+--->
+
+[//]: contributor-faces
+<a href="https://github.com/yuval-hazaz"><img src="https://avatars.githubusercontent.com/u/43705455?v=4" title="yuval-hazaz" width="50" height="50"></a>
+<a href="https://github.com/iddan"><img src="https://avatars.githubusercontent.com/u/12671072?v=4" title="iddan" width="50" height="50"></a>
+<a href="https://github.com/tupe12334"><img src="https://avatars.githubusercontent.com/u/61761153?v=4" title="tupe12334" width="50" height="50"></a>
+<a href="https://github.com/abrl91"><img src="https://avatars.githubusercontent.com/u/39680385?v=4" title="abrl91" width="50" height="50"></a>
+<a href="https://github.com/morhag90"><img src="https://avatars.githubusercontent.com/u/97830649?v=4" title="morhag90" width="50" height="50"></a>
+<a href="https://github.com/arielweinberger"><img src="https://avatars.githubusercontent.com/u/4976416?v=4" title="arielweinberger" width="50" height="50"></a>
+<a href="https://github.com/EugeneTseitlin"><img src="https://avatars.githubusercontent.com/u/6080188?v=4" title="EugeneTseitlin" width="50" height="50"></a>
+<a href="https://github.com/mshidlov"><img src="https://avatars.githubusercontent.com/u/91742238?v=4" title="mshidlov" width="50" height="50"></a>
+<a href="https://github.com/barshimi"><img src="https://avatars.githubusercontent.com/u/4712526?v=4" title="barshimi" width="50" height="50"></a>
+<a href="https://github.com/overbit"><img src="https://avatars.githubusercontent.com/u/2861984?v=4" title="overbit" width="50" height="50"></a>
+<a href="https://github.com/germanilia"><img src="https://avatars.githubusercontent.com/u/34738985?v=4" title="germanilia" width="50" height="50"></a>
+<a href="https://github.com/shaharblanksela"><img src="https://avatars.githubusercontent.com/u/91251849?v=4" title="shaharblanksela" width="50" height="50"></a>
+<a href="https://github.com/GalCegla"><img src="https://avatars.githubusercontent.com/u/62651890?v=4" title="GalCegla" width="50" height="50"></a>
+<a href="https://github.com/belkind27"><img src="https://avatars.githubusercontent.com/u/71218434?v=4" title="belkind27" width="50" height="50"></a>
+<a href="https://github.com/levivannoort"><img src="https://avatars.githubusercontent.com/u/73097785?v=4" title="levivannoort" width="50" height="50"></a>
+<a href="https://github.com/jainpawan21"><img src="https://avatars.githubusercontent.com/u/39362422?v=4" title="jainpawan21" width="50" height="50"></a>
+<a href="https://github.com/g-traub"><img src="https://avatars.githubusercontent.com/u/33841027?v=4" title="g-traub" width="50" height="50"></a>
+<a href="https://github.com/lalit8347"><img src="https://avatars.githubusercontent.com/u/74647848?v=4" title="lalit8347" width="50" height="50"></a>
+<a href="https://github.com/alonram"><img src="https://avatars.githubusercontent.com/u/40050499?v=4" title="alonram" width="50" height="50"></a>
+<a href="https://github.com/muhsinkamil"><img src="https://avatars.githubusercontent.com/u/62111075?v=4" title="muhsinkamil" width="50" height="50"></a>
+<a href="https://github.com/lokeswaran-aj"><img src="https://avatars.githubusercontent.com/u/74011196?v=4" title="lokeswaran-aj" width="50" height="50"></a>
+<a href="https://github.com/meeroslava"><img src="https://avatars.githubusercontent.com/u/20791516?v=4" title="meeroslava" width="50" height="50"></a>
+<a href="https://github.com/udanna"><img src="https://avatars.githubusercontent.com/u/8627181?v=4" title="udanna" width="50" height="50"></a>
+<a href="https://github.com/CKanishka"><img src="https://avatars.githubusercontent.com/u/30779692?v=4" title="CKanishka" width="50" height="50"></a>
+<a href="https://github.com/gitstart"><img src="https://avatars.githubusercontent.com/u/1501599?v=4" title="gitstart" width="50" height="50"></a>
+<a href="https://github.com/almogbhl"><img src="https://avatars.githubusercontent.com/u/32982671?v=4" title="almogbhl" width="50" height="50"></a>
+<a href="https://github.com/chaiwattsw"><img src="https://avatars.githubusercontent.com/u/30198386?v=4" title="chaiwattsw" width="50" height="50"></a>
+<a href="https://github.com/astitva0011"><img src="https://avatars.githubusercontent.com/u/113434018?v=4" title="astitva0011" width="50" height="50"></a>
+<a href="https://github.com/kalmanl"><img src="https://avatars.githubusercontent.com/u/9283404?v=4" title="kalmanl" width="50" height="50"></a>
+<a href="https://github.com/akshay-bharadva"><img src="https://avatars.githubusercontent.com/u/52954931?v=4" title="akshay-bharadva" width="50" height="50"></a>
+<a href="https://github.com/souravjain540"><img src="https://avatars.githubusercontent.com/u/53312820?v=4" title="souravjain540" width="50" height="50"></a>
+<a href="https://github.com/MoFoGo"><img src="https://avatars.githubusercontent.com/u/96979533?v=4" title="MoFoGo" width="50" height="50"></a>
+<a href="https://github.com/molaycule"><img src="https://avatars.githubusercontent.com/u/20028628?v=4" title="molaycule" width="50" height="50"></a>
+<a href="https://github.com/theamanbhargava"><img src="https://avatars.githubusercontent.com/u/23207069?v=4" title="theamanbhargava" width="50" height="50"></a>
+<a href="https://github.com/MichaelSolati"><img src="https://avatars.githubusercontent.com/u/11811422?v=4" title="MichaelSolati" width="50" height="50"></a>
+<a href="https://github.com/b4s36t4"><img src="https://avatars.githubusercontent.com/u/59088937?v=4" title="b4s36t4" width="50" height="50"></a>
+<a href="https://github.com/gabimoncha"><img src="https://avatars.githubusercontent.com/u/39256258?v=4" title="gabimoncha" width="50" height="50"></a>
+<a href="https://github.com/ShabanaNaik"><img src="https://avatars.githubusercontent.com/u/76608039?v=4" title="ShabanaNaik" width="50" height="50"></a>
+<a href="https://github.com/Spid3rrr"><img src="https://avatars.githubusercontent.com/u/38404399?v=4" title="Spid3rrr" width="50" height="50"></a>
+<a href="https://github.com/mulygottlieb"><img src="https://avatars.githubusercontent.com/u/1912933?v=4" title="mulygottlieb" width="50" height="50"></a>
+<a href="https://github.com/TheLearneer"><img src="https://avatars.githubusercontent.com/u/23402178?v=4" title="TheLearneer" width="50" height="50"></a>
+<a href="https://github.com/wiseaidev"><img src="https://avatars.githubusercontent.com/u/62179149?v=4" title="wiseaidev" width="50" height="50"></a>
+<a href="https://github.com/VoidCupboard"><img src="https://avatars.githubusercontent.com/u/82395440?v=4" title="VoidCupboard" width="50" height="50"></a>
+<a href="https://github.com/kabhamo"><img src="https://avatars.githubusercontent.com/u/74118584?v=4" title="kabhamo" width="50" height="50"></a>
+<a href="https://github.com/michizhou"><img src="https://avatars.githubusercontent.com/u/33012425?v=4" title="michizhou" width="50" height="50"></a>
+<a href="https://github.com/Himanxu1"><img src="https://avatars.githubusercontent.com/u/80101755?v=4" title="Himanxu1" width="50" height="50"></a>
+<a href="https://github.com/ahlavorato"><img src="https://avatars.githubusercontent.com/u/114295834?v=4" title="ahlavorato" width="50" height="50"></a>
+<a href="https://github.com/munyoudoum"><img src="https://avatars.githubusercontent.com/u/60089135?v=4" title="munyoudoum" width="50" height="50"></a>
+<a href="https://github.com/rkshaw20"><img src="https://avatars.githubusercontent.com/u/73245914?v=4" title="rkshaw20" width="50" height="50"></a>
+<a href="https://github.com/yonantan"><img src="https://avatars.githubusercontent.com/u/9935021?v=4" title="yonantan" width="50" height="50"></a>
+<a href="https://github.com/alexbass86"><img src="https://avatars.githubusercontent.com/u/96179897?v=4" title="alexbass86" width="50" height="50"></a>
+<a href="https://github.com/jatinparmar96"><img src="https://avatars.githubusercontent.com/u/15108177?v=4" title="jatinparmar96" width="50" height="50"></a>
+<a href="https://github.com/AllMikeNoIke"><img src="https://avatars.githubusercontent.com/u/20914059?v=4" title="AllMikeNoIke" width="50" height="50"></a>
+<a href="https://github.com/ilovetensor"><img src="https://avatars.githubusercontent.com/u/96976448?v=4" title="ilovetensor" width="50" height="50"></a>
+<a href="https://github.com/asharonbaltazar"><img src="https://avatars.githubusercontent.com/u/58940073?v=4" title="asharonbaltazar" width="50" height="50"></a>
+<a href="https://github.com/goingdust"><img src="https://avatars.githubusercontent.com/u/87334449?v=4" title="goingdust" width="50" height="50"></a>
+
+[//]: contributor-faces
+
+## License
+
+A large part of this project is licensed under the [Apache 2.0](./LICENSE) license. The only exception are the components under the `ee` (enterprise edition) directory, these are licensed under the [Amplication Enterprise Edition](./ee/LICENSE) license.
