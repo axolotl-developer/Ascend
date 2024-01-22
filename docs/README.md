@@ -208,62 +208,7 @@ change the height and width for each of the contributors from 80 to 50.
 
 [//]: contributor-faces
 <a href="https://github.com/yuval-hazaz"><img src="https://avatars.githubusercontent.com/u/43705455?v=4" title="yuval-hazaz" width="50" height="50"></a>
-<a href="https://github.com/iddan"><img src="https://avatars.githubusercontent.com/u/12671072?v=4" title="iddan" width="50" height="50"></a>
-<a href="https://github.com/tupe12334"><img src="https://avatars.githubusercontent.com/u/61761153?v=4" title="tupe12334" width="50" height="50"></a>
-<a href="https://github.com/abrl91"><img src="https://avatars.githubusercontent.com/u/39680385?v=4" title="abrl91" width="50" height="50"></a>
-<a href="https://github.com/morhag90"><img src="https://avatars.githubusercontent.com/u/97830649?v=4" title="morhag90" width="50" height="50"></a>
-<a href="https://github.com/arielweinberger"><img src="https://avatars.githubusercontent.com/u/4976416?v=4" title="arielweinberger" width="50" height="50"></a>
-<a href="https://github.com/EugeneTseitlin"><img src="https://avatars.githubusercontent.com/u/6080188?v=4" title="EugeneTseitlin" width="50" height="50"></a>
-<a href="https://github.com/mshidlov"><img src="https://avatars.githubusercontent.com/u/91742238?v=4" title="mshidlov" width="50" height="50"></a>
-<a href="https://github.com/barshimi"><img src="https://avatars.githubusercontent.com/u/4712526?v=4" title="barshimi" width="50" height="50"></a>
-<a href="https://github.com/overbit"><img src="https://avatars.githubusercontent.com/u/2861984?v=4" title="overbit" width="50" height="50"></a>
-<a href="https://github.com/germanilia"><img src="https://avatars.githubusercontent.com/u/34738985?v=4" title="germanilia" width="50" height="50"></a>
-<a href="https://github.com/shaharblanksela"><img src="https://avatars.githubusercontent.com/u/91251849?v=4" title="shaharblanksela" width="50" height="50"></a>
-<a href="https://github.com/GalCegla"><img src="https://avatars.githubusercontent.com/u/62651890?v=4" title="GalCegla" width="50" height="50"></a>
-<a href="https://github.com/belkind27"><img src="https://avatars.githubusercontent.com/u/71218434?v=4" title="belkind27" width="50" height="50"></a>
-<a href="https://github.com/levivannoort"><img src="https://avatars.githubusercontent.com/u/73097785?v=4" title="levivannoort" width="50" height="50"></a>
-<a href="https://github.com/jainpawan21"><img src="https://avatars.githubusercontent.com/u/39362422?v=4" title="jainpawan21" width="50" height="50"></a>
-<a href="https://github.com/g-traub"><img src="https://avatars.githubusercontent.com/u/33841027?v=4" title="g-traub" width="50" height="50"></a>
-<a href="https://github.com/lalit8347"><img src="https://avatars.githubusercontent.com/u/74647848?v=4" title="lalit8347" width="50" height="50"></a>
-<a href="https://github.com/alonram"><img src="https://avatars.githubusercontent.com/u/40050499?v=4" title="alonram" width="50" height="50"></a>
-<a href="https://github.com/muhsinkamil"><img src="https://avatars.githubusercontent.com/u/62111075?v=4" title="muhsinkamil" width="50" height="50"></a>
-<a href="https://github.com/lokeswaran-aj"><img src="https://avatars.githubusercontent.com/u/74011196?v=4" title="lokeswaran-aj" width="50" height="50"></a>
-<a href="https://github.com/meeroslava"><img src="https://avatars.githubusercontent.com/u/20791516?v=4" title="meeroslava" width="50" height="50"></a>
-<a href="https://github.com/udanna"><img src="https://avatars.githubusercontent.com/u/8627181?v=4" title="udanna" width="50" height="50"></a>
-<a href="https://github.com/CKanishka"><img src="https://avatars.githubusercontent.com/u/30779692?v=4" title="CKanishka" width="50" height="50"></a>
-<a href="https://github.com/gitstart"><img src="https://avatars.githubusercontent.com/u/1501599?v=4" title="gitstart" width="50" height="50"></a>
-<a href="https://github.com/almogbhl"><img src="https://avatars.githubusercontent.com/u/32982671?v=4" title="almogbhl" width="50" height="50"></a>
-<a href="https://github.com/chaiwattsw"><img src="https://avatars.githubusercontent.com/u/30198386?v=4" title="chaiwattsw" width="50" height="50"></a>
-<a href="https://github.com/astitva0011"><img src="https://avatars.githubusercontent.com/u/113434018?v=4" title="astitva0011" width="50" height="50"></a>
-<a href="https://github.com/kalmanl"><img src="https://avatars.githubusercontent.com/u/9283404?v=4" title="kalmanl" width="50" height="50"></a>
-<a href="https://github.com/akshay-bharadva"><img src="https://avatars.githubusercontent.com/u/52954931?v=4" title="akshay-bharadva" width="50" height="50"></a>
-<a href="https://github.com/souravjain540"><img src="https://avatars.githubusercontent.com/u/53312820?v=4" title="souravjain540" width="50" height="50"></a>
-<a href="https://github.com/MoFoGo"><img src="https://avatars.githubusercontent.com/u/96979533?v=4" title="MoFoGo" width="50" height="50"></a>
-<a href="https://github.com/molaycule"><img src="https://avatars.githubusercontent.com/u/20028628?v=4" title="molaycule" width="50" height="50"></a>
-<a href="https://github.com/theamanbhargava"><img src="https://avatars.githubusercontent.com/u/23207069?v=4" title="theamanbhargava" width="50" height="50"></a>
-<a href="https://github.com/MichaelSolati"><img src="https://avatars.githubusercontent.com/u/11811422?v=4" title="MichaelSolati" width="50" height="50"></a>
-<a href="https://github.com/b4s36t4"><img src="https://avatars.githubusercontent.com/u/59088937?v=4" title="b4s36t4" width="50" height="50"></a>
-<a href="https://github.com/gabimoncha"><img src="https://avatars.githubusercontent.com/u/39256258?v=4" title="gabimoncha" width="50" height="50"></a>
-<a href="https://github.com/ShabanaNaik"><img src="https://avatars.githubusercontent.com/u/76608039?v=4" title="ShabanaNaik" width="50" height="50"></a>
-<a href="https://github.com/Spid3rrr"><img src="https://avatars.githubusercontent.com/u/38404399?v=4" title="Spid3rrr" width="50" height="50"></a>
-<a href="https://github.com/mulygottlieb"><img src="https://avatars.githubusercontent.com/u/1912933?v=4" title="mulygottlieb" width="50" height="50"></a>
-<a href="https://github.com/TheLearneer"><img src="https://avatars.githubusercontent.com/u/23402178?v=4" title="TheLearneer" width="50" height="50"></a>
-<a href="https://github.com/wiseaidev"><img src="https://avatars.githubusercontent.com/u/62179149?v=4" title="wiseaidev" width="50" height="50"></a>
-<a href="https://github.com/VoidCupboard"><img src="https://avatars.githubusercontent.com/u/82395440?v=4" title="VoidCupboard" width="50" height="50"></a>
-<a href="https://github.com/kabhamo"><img src="https://avatars.githubusercontent.com/u/74118584?v=4" title="kabhamo" width="50" height="50"></a>
-<a href="https://github.com/michizhou"><img src="https://avatars.githubusercontent.com/u/33012425?v=4" title="michizhou" width="50" height="50"></a>
-<a href="https://github.com/Himanxu1"><img src="https://avatars.githubusercontent.com/u/80101755?v=4" title="Himanxu1" width="50" height="50"></a>
-<a href="https://github.com/ahlavorato"><img src="https://avatars.githubusercontent.com/u/114295834?v=4" title="ahlavorato" width="50" height="50"></a>
-<a href="https://github.com/munyoudoum"><img src="https://avatars.githubusercontent.com/u/60089135?v=4" title="munyoudoum" width="50" height="50"></a>
-<a href="https://github.com/rkshaw20"><img src="https://avatars.githubusercontent.com/u/73245914?v=4" title="rkshaw20" width="50" height="50"></a>
-<a href="https://github.com/yonantan"><img src="https://avatars.githubusercontent.com/u/9935021?v=4" title="yonantan" width="50" height="50"></a>
-<a href="https://github.com/alexbass86"><img src="https://avatars.githubusercontent.com/u/96179897?v=4" title="alexbass86" width="50" height="50"></a>
-<a href="https://github.com/jatinparmar96"><img src="https://avatars.githubusercontent.com/u/15108177?v=4" title="jatinparmar96" width="50" height="50"></a>
-<a href="https://github.com/AllMikeNoIke"><img src="https://avatars.githubusercontent.com/u/20914059?v=4" title="AllMikeNoIke" width="50" height="50"></a>
-<a href="https://github.com/ilovetensor"><img src="https://avatars.githubusercontent.com/u/96976448?v=4" title="ilovetensor" width="50" height="50"></a>
-<a href="https://github.com/asharonbaltazar"><img src="https://avatars.githubusercontent.com/u/58940073?v=4" title="asharonbaltazar" width="50" height="50"></a>
-<a href="https://github.com/goingdust"><img src="https://avatars.githubusercontent.com/u/87334449?v=4" title="goingdust" width="50" height="50"></a>
-
+0"></a>
 [//]: contributor-faces
 
 ## License
