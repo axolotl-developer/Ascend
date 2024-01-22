@@ -206,10 +206,7 @@ npx contributor-faces --exclude "*bot*" --limit 70 --repo "https://github.com/am
 change the height and width for each of the contributors from 80 to 50.
 --->
 
-[//]: contributor-faces
 <a href="https://github.com/yuval-hazaz"><img src="https://avatars.githubusercontent.com/u/43705455?v=4" title="yuval-hazaz" width="50" height="50"></a>
-0"></a>
-[//]: contributor-faces
 
 ## License
 
