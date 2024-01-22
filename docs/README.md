@@ -1,213 +1,787 @@
-<h1 align="center">
-    <a href="https://amplication.com/#gh-light-mode-only">
-    <img src="./.github/assets/amplication-logo-light-mode.svg">
-    </a>
-    <a href="https://amplication.com/#gh-dark-mode-only">
-    <img src="./.github/assets/amplication-logo-dark-mode.svg">
-    </a>
-</h1>
-
+<!-- logo -->
 <p align="center">
-  <i align="center">Instantly generate production-ready Node.js backend apps 🚀</i>
+  <img width='300' src="img/logo-and-text.svg">
 </p>
 
-<h4 align="center">
-  <a href="https://github.com/amplication/amplication/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/amplication/amplication/ci.yml?branch=master&label=pipeline&style=flat-square" alt="continuous integration" style="height: 20px;">
-  </a>
-  <a href="https://github.com/amplication/amplication/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors-anon/amplication/amplication?color=yellow&style=flat-square" alt="contributors" style="height: 20px;">
-  </a>
-  <a href="https://opensource.org/licenses/Apache-2.0">
-    <img src="https://img.shields.io/badge/apache%202.0-blue.svg?style=flat-square&label=license" alt="license" style="height: 20px;">
-  </a>
-  <br>
-  <a href="https://amplication.com/discord">
-    <img src="https://img.shields.io/badge/discord-7289da.svg?style=flat-square&logo=discord" alt="discord" style="height: 20px;">
-  </a>
-  <a href="https://twitter.com/amplication">
-    <img src="https://img.shields.io/twitter/follow/amplication?style=social" alt="twitter" style="height: 20px;">
-  </a>
-  <a href="https://www.youtube.com/c/Amplicationcom">
-    <img src="https://img.shields.io/badge/youtube-d95652.svg?style=flat-square&logo=youtube" alt="youtube" style="height: 20px;">
-  </a>
-</h4>
+<!-- tag line -->
+<h3 align='center'> Make Your React App Truly Reactive ! </h3>
 
-
-
+<!-- primary badges -------------------------------------->
 <p align="center">
-    <img src="https://github.com/amplication/amplication/assets/73097785/c7ed2bbc-8954-46a1-a520-91a4711a9320.png" alt="dashboard"/>
+  <!-- version -->
+  <img src='https://img.shields.io/github/package-json/v/MananTank/radioactive-state?color=blue&label=npm&style=flat' />
+  <!-- size -->
+  <img src='https://img.shields.io/bundlephobia/minzip/radioactive-state?color=success&label=size' />
+  <!-- downloads npm per week  -->
+  <img src='https://img.shields.io/npm/dw/radioactive-state?color=blueviolet' />
+  <!-- chat -->
+  <a href='https://join.slack.com/t/radioactive-state/shared_invite/zt-gwd1rsvr-vkoizw5RG5rk9rwsdgT3gQ'>
+    <img src='https://img.shields.io/badge/Chat-Slack-red'>
+  </a>
+  <!-- stars -->
+  <img src='https://img.shields.io/github/stars/MananTank/radioactive-state?style=social&color=%23FFB31A' />
+  <!-- follow -->
+  <img src='https://img.shields.io/github/followers/MananTank?label=Follow&style=social&color=%23FFB31A' />
+  <!-- Twitter intent -->
+  <a href='https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FMananTank%2Fradioactive-state&via=MananTank_&text=Make%20your%20@reactjs%20App%20Truly%20Reactive%20with%20radioactive-state&hashtags=react%2CradioactiveState' target='_blank'>
+    <img src='https://img.shields.io/twitter/url/http/shields.io.svg?style=social'/>
+  </a>
 </p>
 
-## Introduction
-
-`Amplication` is a robust, open-source development platform designed to revolutionize the creation of scalable and secure Node.js applications. We eliminate repetitive coding tasks and deliver production-ready infrastructure code, meticulously tailored to your specifications and adhering to industry best practices.
-
-Our user-friendly interface fosters seamless integration of APIs, data models, databases, authentication, and authorization. Built on a flexible, plugin-based architecture, Amplication allows effortless customization of the code and offers a diverse range of integrations.
-
-With a strong focus on collaboration, Amplication streamlines team-oriented development, making it an ideal choice for groups of all sizes, from startups to large enterprises. Our platform enables you to concentrate on your business logic, while we handle the heavy lifting.
-
-Experience the fastest way to develop Node.js applications with Amplication.
-
-<details open>
-<summary>
- Features
-</summary> <br />
-
-<p align="center">
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
-&nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+<!-- Coverage badges ---------------------------------- -->
+<p align='center'>
+  <img src='https://img.shields.io/badge/Stmts-100%25-success' />
+  <img src='https://img.shields.io/badge/Branch-100%25-success' />
+  <img src='https://img.shields.io/badge/Funcs-100%25-success' />
+  <img src='https://img.shields.io/badge/Lines-100%25-success' />
 </p>
+<br/>
 
-<p align="center">
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/62c8d533-8475-4290-abc8-c433c095e68a.png" alt="plugins"/>
-&nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9c67a354-a06f-47d1-a118-ab89b775bf91.png" alt="microservices"/>
-</p> 
-    
-<p align="center">
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/a51e166b-07ec-4c80-99ed-8792a81c4064.png" alt="own-your-code"/>
-&nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/1cca9721-b8d6-425b-a1a9-d10d3cdcc9b8.png" alt="customize-code"/>
-</p>
-    
-</details>
 
-## Usage 
 
-To get started with Amplication, the hosted version of the product can be used. You can get started immediately at [app.amplication.com](https://app.amplication.com). After the login page, you will be guided through creating your first service. The [website](https://amplication.com) provides an overview of the application, additional information on the product and guides can be found in the [docs](https://docs.amplication.com).
+## Features
+
+☢ Deeply Reactive, Directly Mutate State at any level to Update Component
+
+⚡ Blazing Fast - 25% faster than `useState`
+
+📺 No Extra Re-Renders - Auto Mutation batching
+
+🌿 Always Fresh State, _unlike_ `useState`
+
+🧬 Reactive Bindings For Inputs
+
+⚛ Reactive Props
+
+☕ Zero Dependencies, Ultra Light-Weight `< 1kb`
+
+<br/>
+
+
+
+
+## 🌻 Motivation
+
+While the React's `useState` hook has been great for simple states, it is still **a pain to update a complex state**.
+
+It also comes with other problems like **not having the access to fresh state right away** after the new state is set and closure problems because of state's value only updating after a re-render.
+
+We can eliminate these problems, Improve performance and Introduce exciting new features in React with a **Truly Reactive State !**
+
+Enter `radioactive-state`
+
+<br/>
+
+
+## Installation
+```bash
+npm i radioactive-state
+```
+<br/>
+
+
+
+## ☢️ What's a Radioactive-State ?
+
+Radioactive state is a **deeply reactive** state.
+When it is mutated at any level ( shallow or deep ) it re-renders the component automatically !
+
+No need to set the state. No need to use libraries like immer.js to produce a new state. No overhead of creating a new state at all! **Just mutate your state, that's it !**
+
+<br/>
+
+
+
+
+## ✨ Creating a Radioactive State With `useRS` hook
+
+`radioactive-state` gives you a hook `useRS` (use radioactive state) which lets you create a radioactive state in your React Components.
+
+### Examples
+
+> Click on the triangle icon to expand the Example
+
 
 <details>
 <summary>
-  Tutorials
-</summary> <br />
+🍭 <strong>Counter App</strong>
+<p align='center'>
+  <img align='center' src='img/counter.gif' width='450'/>
+</p>
+</summary>
 
-- [To-do application using Amplication and Angular](https://docs.amplication.com/tutorials/angular-todos)
-- [To-do application using Amplication and React](https://docs.amplication.com/tutorials/react-todos)
+<!-- Live Demo -->
+<a href='https://codesandbox.io/s/counter-example-v9bsh?file=/src/Counter.js' target="_blank" title='counter app'> Live Demo </a>
+
+<!-- Code -->
+```jsx
+import useRS from 'radioactive-state';
+
+const Counter = () => {
+  // create a radioactive state
+  const state = useRS({
+    count: 0,
+  });
+
+  // yep, that's it
+  const increment = () => state.count++;
+
+  return <div onClick={increment}>{state.count}</div>;
+};
+```
 </details>
+<br/>
 
-## Development
+---
 
-Alternatively, instead of using the hosted version of the product, Amplication can be run locally for code generation purposes or contributions - if so, please refer to our [contributing](#contributing_anchor) section.
 
-<details open>
+
+<details>
 <summary>
-Pre-requisites
-</summary> <br />
-To be able to start development on Amplication, make sure that you have the following prerequisites installed:
+<strong> 🍡 Array Of Counters App </strong>
+<p align='center'>
+  <img align='center' src='img/counters.gif' width='450'/>
+</p>
+</summary>
 
-###
+Let's take this a step further, Let's make an app that has an array of counters, each of them can be incremented individually and sum of all the counters is displayed too
 
-- Node.js
-- Docker
-- Git
+This examples shows that deep mutation also triggers a re-render and that **you can use any mutative functions directly**
+
+<a href='https://codesandbox.io/s/counters-example-sctz6?file=/src/Counters.js' target="_blank" title='counter app'> Live Demo </a>
+
+```jsx
+import useRS from "radioactive-state";
+
+const Counters = () => {
+
+  const state = useRS({
+    counts: [0],
+    sum: 0
+  });
+
+  const increment = (i) => {
+    state.counts[i]++;
+    state.sum++;
+  };
+
+  const addCounter = () => state.counts.push(0);
+
+  return (
+    <>
+      <button onClick={addCounter}> Add Counter </button>
+      <div className="counts">
+        {state.counts.map((count, i) => (
+          <div className="count" onClick={() => increment(i)} key={i}>
+            {count}
+          </div>
+        ))}
+      </div>
+      <div className="count sum">{state.sum}</div>
+    </>
+  );
+};
+```
+</details>
+<br />
+
+
+
+
+## 📺 No Extra Re-Renders, Mutations are Batched
+
+You might be wondering:
+
+> "What if I mutate multiple keys in state, Is that going to trigger a re-render component multiple times ?"
+
+**Nope!** 😉
+
+### Example:
+
+```js
+// suppose you are mutating multiple things in your state in a function doStuff
+
+const doStuff = () => {
+  state.a = 200;
+  state.b.x.y.push([10, 20, 30]);
+  state.c++;
+  state.c++;
+  state.c++;
+  delete state.d.e.f;
+  state.e.splice(10, 1);
+  state.f = state.f.filter(x => x.completed);
+};
+
+// When this function is called
+// it is not **not** going to trigger re-render of component 8 times 😉
+// it will only trigger re-render 1 time! - No extra re-renders! 🤗
+```
+
+#### How is that possible ?
+
+Mutations are batched into a one single mutation.
+So, No matter how many times you mutate the state, it only triggers re-render once
+
+This allows you to perform a complex mutation in multiple steps without having to worry about re-renders
+
+<details>
+<summary> Example </summary>
+
+```javascript
+
+const addNewFriend = (newFriendID) => {
+  const {users, userID} = state
+  const user = users[userID]
+  const newFriend = users[newFriendID]
+  user.friends.push(newFriendID)
+  newFriend.friends.push(userID)
+}
+```
+
+</details>
+<br/>
+
+
+
+
+## ⚛ Reactive Props
+
+In traditional React, Props are considered immutable and mutating them does not trigger re-render. But When using radioactive-state, if you pass a piece of state as a prop to child component, this **child component has the capability to trigger a re-render in parent component** by mutating the prop !
+
+This can be a **powerful feature**, where **you no longer have to pass functions as props to child component for triggering a re-render in parent component**, which also removes the need to memoize that function
+
+
+### Example: Todos App
+
+<!-- Live Demo -->
+<a href='https://codesandbox.io/s/todos-example-zivos?file=/src/Todos.js' target='_black'> Live Demo </a>
+
+<!-- Todos GIF -->
+<p align='center'>
+  <img align='center' src='img/todos.gif' width='350'/>
+</p>
+
+
+<br/>
+
+
+
+
+## 🌿 State is always fresh !
+
+Unlike `useState`, `useRS`'s state is always fresh
+
+#### What does that mean ?
+
+When you set a new state using `useState`'s setter function, it does not directly change the value of state. value of state is changed only after a re-render. This can cause some weird bugs.
+
+Let's see those problems and see how `radioactive-state` is immune to them.
+
+---
+
+<details>
+<summary> <code>useState</code>'s state is not always fresh </summary>
+<br/>
+Let's add Logs before and after the state is set in our counter app.
+
+<!-- Live Demo -->
+<a href='https://codesandbox.io/s/usestate-s-state-is-not-always-fresh-pfzpw?file=/src/App.js' target='_black'> Live Demo </a>
+
+<!-- Code -->
+```js
+function App() {
+  const [state, setState] = useState({
+    count: 0
+  });
+
+  const increment = () => {
+    console.log("before:", state.count); // before: 0
+    setState({ count: state.count + 1 });
+    console.log("after:", state.count); // after: 0
+  };
+
+  return (
+    <div className="App">
+      <div className="count" onClick={increment}>
+        {state.count}
+      </div>
+    </div>
+  );
+}
+
+// when increment is called, you would get the same before and after values
+// before: 0
+// after: 0
+
+// we are not getting the fresh state after it is updated,
+// we have to wait for the component to re-render
+
+```
+<br/>
+
+
+### `useRS` state is always fresh!
+
+`useRS`'s state is mutated directly by the user. So, **No need to wait for a re-render to get the fresh state**.
+
+With radioactive-state, You can use your state with confidence that whenever you use it, it's gonna be fresh ! 😙
+
+<a href='https://codesandbox.io/s/userss-state-is-always-fresh-jq741?file=/src/App.js' target='_black'> Live Demo </a>
+
+```js
+function App() {
+  const state = useRS({
+    count: 0
+  });
+
+  const increment = () => {
+    console.log("before:", state.count); // before: 0
+    state.count++;
+    console.log("after:", state.count); // after: 1
+  };
+
+  return (
+    <div className="App">
+      <div className="count" onClick={increment}>
+        {state.count}
+      </div>
+    </div>
+  );
+}
+
+// works as expected 😄 !
+```
+
+---
 </details>
 
-<details open>
-<summary>
-Running Amplication
-</summary> <br />
 
-> **Note**
-> It is also possible to start development with GitHub Codespaces, when navigating to `< > Code`, select `Codespaces` instead of `Local`. Click on either the `+`-sign or the `Create codespace on master`-button.
+---
 
-Amplication is using a monorepo architecture - powered by <a href="https://nx.dev">Nx Workspaces</a> - where multiple applications and libraries exist in a single repository. To setup a local development environment the following steps can be followed:
+<details>
+<summary> <code>useState</code>'s closure problem </summary>
+<br/>
 
-**BEFORE** you run the following steps make sure:
-1. You have typescript installed locally on you machine ```npm install -g typescript```
-2. You are using a supported node version (check `engines` `node` in the [package.json](./package.json))
-3. You are using a supported npm version (check `engines` `npm` in the [package.json](./package.json))
-4. You have `docker` installed and running on your machine
+Let's assume that increment function is async and before incrementing the value of count, we have to wait for some async task.
 
+Now guess what happens if you click the counter quickly 3 times?
+count is only going to increment to 1 instead of 3, even though increment function is called 3 times !
 
-1. Clone the repository and install dependencies:
-```shell
-git clone https://github.com/amplication/amplication.git && cd amplication && npm install
+<!-- Live Demo -->
+<a href='https://codesandbox.io/s/usestates-closure-problem-x6g28?file=/src/App.js' target='_black'> Live Demo </a>
+
+<!-- Code -->
+```js
+function App() {
+  const [state, setState] = useState({
+    count: 0
+  });
+
+  // click the button 3 times quickly so increment will be called 3 times
+  // but all three times, it will use the same old value of count
+  const increment = async () => {
+    await someAsyncTask();
+    setState({ count: state.count + 1 });
+  };
+
+  return (
+    <div className="App">
+      <div className="count" onClick={increment}>
+        {state.count}
+      </div>
+    </div>
+  );
+}
 ```
 
-2. Run the setup script, which takes care of installing dependencies, building packages, and setting up the workspace:
-```shell
-npm run setup:dev
+This happens because setCount keeps using old value of count until the component re-renders.
+This is because increment function "closes over" the count when it was defined.
+
+To fix this issue, you update the state using a function like this:
+
+```js
+// passing new state instead of function that creates new state fixes this issue
+setCount(prevState => {
+  return {
+    count: prevState.count + 1
+  }
+})
 ```
 
-3. Option 1: Running the required infrastructure - view infrastructure component logs
+This gets awkward and complicated really fast as your state becomes more complex.
+<br/>
 
+### `useRS` fixes this issue !
 
-```shell
-npm run docker:dev
+<a href='https://codesandbox.io/s/users-solves-the-closure-problem-2iys5?file=/src/App.js' target='_black'> Live Demo </a>
+
+If you click the button 3 times quickly, count will  increment from 0 to 3. It works as expected 🙌
+
+```js
+function App() {
+  const state = useRS({
+    count: 0
+  });
+
+  const increment = async () => {
+    await someAsyncTask();
+    state.count++; // works as expected !
+  };
+
+  return (
+    <div className="App">
+      <div className="count" onClick={increment}>
+        {state.count}
+      </div>
+    </div>
+  );
+}
 ```
-3. Option 2: Running the required infrastructure - run the infrastructure components in background
-```shell
-npm run docker:dev -- -d
-```
-
-4. Apply database migrations
-```shell
-npm run db:migrate:deploy
-```
-
-5. To start developing, run one or more of the applications available under `serve:[application]` scripts of the package.json.
-
-```shell
-# running the server component
-npm run serve:server
-
-# running the client component
-npm run serve:client
-
-# running the data-service-generator component
-npm run serve:dsg
-
-# running the git-pull-request-service component
-npm run serve:git
-
-# running the plugin-api component
-npm run serve:plugins
-```
-
-> **Note**
-> In order to run the Amplication client properly, both the client and server need to be started by the `npm run serve:[application]` command, as well as an additional component for development on a specific component.
-
-The development environment should now be set up. Additional information on the different application components can be found under packages/`[application]`/README.md file. Happy hacking! 👾
+---
 </details>
 
-## Resources
+---
 
-- **[Website](https://amplication.com)** overview of the product.
-- **[Docs](https://docs.amplication.com)** for comprehensive documentation.
-- **[Blog](https://amplication.com/blog)** for guides and technical comparisons.
-- **[Roadmap](https://amplication.com/#roadmap)** to see what features will be added in the future.
-- **[Discord](https://amplication.com/discord)** for support and discussions with the community and the team.
-- **[GitHub](https://github.com/amplication/amplication)** for source code, project board, issues, and pull requests.
-- **[Twitter](https://twitter.com/amplication)** for the latest updates on the product and published blogs.
-- **[YouTube](https://www.youtube.com/c/Amplicationcom)** for guides and technical talks.
+<br/>
 
-<a name="contributing_anchor"></a>
-## Contributing
 
-Amplication is an open-source project. We are committed to a fully transparent development process and highly appreciate any contributions. Whether you are helping us fix bugs, proposing new features, improving our documentation or spreading the word - we would love to have you as a part of the Amplication community. Please refer to our [contribution guidelines](./CONTRIBUTING.md) and [code of conduct](./CODE_OF_CONDUCT.md).
 
-- Bug Report: If you see an error message or encounter an issue while using Amplication, please create a [bug report](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A+bug&template=bug.yaml&title=%F0%9F%90%9B+Bug+Report%3A+).
+## ⚡ Radioactive State is blazing fast !
 
-- Feature Request: If you have an idea or if there is a capability that is missing and would make development easier and more robust, please submit a[feature request](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A+feature+request&template=feature.yml).
+`useRS` is **25% faster** than `useState` for an a fairly Complex React App.
 
-- Documentation Request: If you're reading the Amplication docs and feel like you're missing something, please submit a [documentation request](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A+docs&template=documentation-request.yaml&title=%F0%9F%93%96+Documentation%3A+).
+> This number is derived from an average of 100 performance tests where an array of 200 objects is rendered and various operations like adding, removing, re-ordering and mutations were done one after another.
 
-Not sure where to start? Join our discord and we will help you get started!
+Note that, `useRS` **keeps getting faster and faster** compared to useState if you keep increasing the complexity of state, **even more than 25%**
+But, **for a simple web app**, both will have about the **same performance** where state of a component is not that complex.
 
-<a href="https://amplication.com/discord"><img src="https://amplication.com/images/discord_banner_purple.svg" /></a>
+### Why `useRS` is faster than `useState` ?
 
-## Contributors
+In the case of `useState`, every time you want to update the state, you have to create a new state and call setter function with the new state.
 
-<!---
-npx contributor-faces --exclude "*bot*" --limit 70 --repo "https://github.com/amplication/amplication"
+But, In the case of `radioactive-state` **you don't have to create a new state**, you just mutate the state and that's it. radioactive-state **does not create a new state** under the hood either. There are other optimizations as well, which makes sure no extra work is done, no extra re-renders are triggered.
 
-change the height and width for each of the contributors from 80 to 50.
---->
+<br/>
 
-<a href="https://github.com/yuval-hazaz"><img src="https://avatars.githubusercontent.com/u/43705455?v=4" title="yuval-hazaz" width="50" height="50"></a>
 
-## License
 
-A large part of this project is licensed under the [Apache 2.0](./LICENSE) license. The only exception are the components under the `ee` (enterprise edition) directory, these are licensed under the [Amplication Enterprise Edition](./ee/LICENSE) license.
+
+## 🧬 Reactive bindings for inputs
+
+<details>
+<summary> You can create a controlled input the old way like this </summary>
+
+### using the `useState`
+
+<!-- code -->
+```jsx
+const [input, setInput] = useState("type something");
+
+<input
+  value={input}
+  onChange={(e) => setInput(e.target.value)}
+  type='text'
+/>
+```
+
+### using the `useRS`
+
+```jsx
+// creating state
+const state = useRS({
+  input: ''
+})
+
+<input
+  value={state.input}
+  onChange={(e) => state.input = e.target.value}
+  type='text'
+/>
+```
+
+Both are fairly easy but becomes annoying if you have a form with multiple inputs
+
+You would also have to convert string to number if the input is type 'number' or 'range'.
+You would also need to use 'checked' prop instead of 'value' for checkboxes and radios
+
+---
+</details>
+<br/>
+
+
+Radioactive State provides a binding API that lets you bind an input's value to a key in state.
+
+To bind `state.key` to an input you prefix the key with $ - `state.$key` and then spread over the input. that's it ! 😮
+
+```js
+<input {...state.$key}  />
+```
+
+This works because, `state.key` returns the value but `state.$key` returns an object containing value and onChange props, which we are spreading over input
+
+<br/>
+
+### Bindings takes care of different types of inputs
+
+Bindings **rely on initial value of the key** in state to figure out what type of input it is
+
+if the initial value is a type of `string` or `number`, `state.$key` returns object containing `value` and `onChange`
+
+If the initial value is type of `boolean`, `state.$key` returns an object containing `checked` and `onChange` props and uses `e.target.checked` internally in the onChange function
+
+If the initial value type of `number`, onChange function converts the `e.target.value` from `string` to `number` then saves it in the key.
+
+#### Example
+
+<!-- Live Demo -->
+<a href='https://codesandbox.io/s/reactive-bindings-all-types-dleod?file=/src/App.js' target="_blank" title='counter app'> Live Demo </a>
+
+<!-- Bindings GIF -->
+<p align='center'>
+  <img src='./img/form.gif' width='300'>
+</p>
+
+<!-- code -->
+```jsx
+const state = useRS({
+  a: 69,
+  b: 420,
+  c: "Hello",
+  d: "Write something here",
+  e: true,
+  f: "bar"
+});
+
+const { $a, $b, $c, $d, $e, $f } = state;
+
+return (
+  <div className="App">
+    <pre> {JSON.stringify(state, null, 2)}</pre>
+    <input {...$a} type="number" />
+    <input {...$b} type="range" min="0" max="1000" />
+    <input {...$c} type="text" />
+    <textarea {...$d} />
+    <input {...$e} type="checkbox" />
+    <select {...$f}>
+      <option value="foo"> foo </option>
+      <option value="bar"> bar </option>
+      <option value="baz"> baz </option>
+    </select>
+  </div>
+);
+
+```
+<br/>
+
+
+
+
+## Dealing with expensive initial State
+
+If initial State is a result of doing some expensive calculation, (for example, getting the initial State from localStorage), It would be very inefficient to directly call it like this
+
+```javascript
+const state = useRS({
+  x: getX(); // assume that getX is an expensive function
+})
+```
+
+This is inefficient because getX runs every time the component renders.
+This is not what we want. We just want to call `getX` only once to get the initial state.
+
+To fix this you can just pass the function as initial State, without calling it.
+This is similar to what we do in useState
+
+#### `useState`
+```javascript
+const [x, setX] = useState(getX)
+```
+
+#### `useRS`
+```javascript
+const state = useRS({
+  x: getX
+})
+```
+
+This is valid for entire state tree as well
+
+<!-- code -->
+```javascript
+// assume that getState function when called returns the initial State
+
+const state = useRS(getState)
+```
+
+This also valid for any deeply nested key in the state tree
+
+<!-- code -->
+```javascript
+// assume that getD is a function which when called returns the initial value of d
+
+const state = useRS({
+  a: 100
+  b: {
+    c: {
+      d: getD
+    }
+  }
+})
+```
+<br/>
+
+
+
+
+
+## ⛳ Mutation flag
+
+If we mutate a reference type data in state such as array or an object, it's reference stays the same. This can create problems If you want to run some effect when it is mutated.
+
+**Example**
+
+<!-- code -->
+```javascript
+const state = useRS({
+  todos: []
+})
+
+// when addTodo is called, it would trigger a re-render
+// but the effect would not run because todos is mutated, its reference is same
+useEffect( () => {
+  console.log('todos changed to', state.todos)
+}, [state.todos])
+
+
+const addTodo = (todo) => state.todos.push(todo)
+```
+
+This happens because useEffect uses `===` to check whether the dependencies changed or not. To fix this, instead of adding `state.todos` in dependency array add `state.todos.$`
+
+### `state.key.$`
+
+`state.key.$` is a number which is increment by some amount when key is mutated. So, `state.key.$` works a mutation flag for `state.key`
+
+**Example**
+
+<!-- code -->
+```javascript
+const state = useRS( { todos: [] })
+
+useEffect( () => {
+  console.log('todos changed to', state.todos) // works !
+}, [state.todos.$]) // eslint-disable-line
+```
+
+If you have ESlint setup, it will complain about not adding `state.todos` in the dependency array. You can fix it by disabling eslint for that particular line.
+
+**Note** that **this is only necessary of reference type data**, don't do this for value types such as number, strings, boolean etc. because value types are immutable and they are re-assigned a new value, they are not mutated.
+
+<!-- code -->
+```javascript
+const state = useRS({
+  count: 0
+})
+
+// works
+useEffect( () => {
+  console.log('count changed to', state.count)
+}, [state.count])
+
+// count is actually assigned a new value, it is not mutated
+// count++ is count = count + 1
+const increment = () => state.count++
+```
+<br/>
+
+
+
+
+## ❓ FAQs
+
+<!-- faq 1 -->
+<details>
+<summary>Can I use useRS hook more than once ? </summary>
+<br/>
+
+**Yes.** You don't have to put all of the state of the component inside the state object. You can use the hook more than once.
+
+#### Example
+
+```javascript
+const todos = useRS([])
+const form = useRS({
+  name: '',
+  age: 0,
+})
+```
+
+While this is okay, **I would advise you to not do this**, Because putting all of state in one object gives you **better *performance** in the case of radioactive-state. (because of better mutation batching)
+
+It would also be **hard to store simple value types**, because simple value types can not be mutated and so you would need to wrap it inside an object.
+
+#### Example
+
+```javascript
+const count = useRS(0) // invalid, gives error ❌
+```
+
+```javascript
+const count = useRS( { value: 0 }) // works ✅
+```
+
+This would also make creating reactive bindings awkward. That's why it is **strongly recommended to store all the state into a single object** by using useRS only once !
+
+---
+</details>
+
+
+<!-- FAQ 2 -->
+<details>
+<summary> Is this magic, How does it work ? </summary>
+<br/>
+radioactive-state uses **JavaScript Proxy** to create a deeply reactive state by recursively proxifying the state. Whenever a mutation occurs in the state tree, a function is called with information about where the mutation took place which schedules an async re-render to update the component to reflect the changes in state to UI.
+</details>
+<br/>
+
+
+
+
+## 💙 Contributing
+
+PR's are welcome !
+
+Found a Bug ? Create an Issue.
+
+Chat on [Slack](https://join.slack.com/t/radioactive-state/shared_invite/zt-gwd1rsvr-vkoizw5RG5rk9rwsdgT3gQ)
+
+<br/>
+
+
+
+
+## 💖 Like this project ?
+
+Leave a ⭐ If you think this project is cool.
+
+[Share with the world](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FMananTank%2Fradioactive-state&via=MananTank_&text=Make%20your%20@react%20App%20Truly%20Reactive%20with%20radioactive-state&hashtags=react%2CradioactiveState) ✨
+
+<br/>
+
+
+
+
+## 👨‍💻 Author
+
+### Manan Tank
+
+[Twitter](https://twitter.com/MananTank_ "Manan Tank")
+
+<br/>
+
+
+
+
+## 🍁 Licence
+
+**ISC**
